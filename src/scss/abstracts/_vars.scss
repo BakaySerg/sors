@@ -1,23 +1,19 @@
 //fonts
-$default-font: 'MyriadPro',arial, sans-serif;
-$title-font: 'LexendDeca','MyriadPro',arial, sans-serif;
+$default-font: 'Circe',arial, sans-serif;
 
 //text
-$text:#2C374D;
+$text:#193F3F;
 // $base-text: rgba(#2C374D,0.7);
 $muted-text: #6B7382;
 
 // bg
 $white: #fff;
-$bg: #F5F5FB;
-$bg2: #C0C3CA;
+$bg: #F5F6FA;
+$bg-dark: #688595;
 // $border: #f5f5fb;
-$dark: #323E54;
 
 //accents
-$orange: #FF7244;
-$indigo: #035299;
-$blue: #0076DF;
+$accent: #70C1A0;
 
 //px -> em
 @use "sass:math";
