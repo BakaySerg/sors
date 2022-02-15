@@ -2,15 +2,20 @@
 $default-font: 'Circe',arial, sans-serif;
 
 //text
-$text:#193F3F;
-// $base-text: rgba(#2C374D,0.7);
-$muted-text: #6B7382;
+$text:#183e3e;
 
 // bg
 $white: #fff;
-$bg: #F5F6FA;
+$bg-light: #F5F6FA;
 $bg-dark: #688595;
-// $border: #f5f5fb;
+
+$bg-green: #D7F4DF;
+$bg-blue: #BCCFD6;
+$bg-dark-blue: #5E7E8F;
+$bg-light-blue: #E6F1F5;
+$bg-light-orange: #FCEDE4;
+
+$border: rgba(104,133,140,.3);
 
 //accents
 $accent: #70C1A0;

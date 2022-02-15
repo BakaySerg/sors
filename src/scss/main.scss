@@ -2,6 +2,7 @@
 @import "base/reset";
 @import "base/fonts";
 @import "base/helpers";
+@import "base/typography";
 
 body {
 	position: relative;
@@ -44,11 +45,12 @@ body {
 }
 
 
-//components
-// @import "components/buttons";
 // layout
 @import "layout/header";
 @import "layout/footer";
+
+//components
+@import "components/icons";
 
 //modules
 @import "modules/intro";
