@@ -26,6 +26,7 @@ body {
 	position: relative;
 	width: 100%;
 	min-height: 50vh;
+	overflow: hidden;
 }
 .container {
 	position: relative;
@@ -51,7 +52,10 @@ body {
 
 //components
 @import "components/icons";
+@import "components/buttons";
+@import "components/forms";
 
 //modules
 @import "modules/intro";
+@import "modules/sections";
 

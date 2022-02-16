@@ -1,6 +1,109 @@
 .intro {
 	min-height: 40vh;
+	.s-intro {
+		position: relative;
+		@media (min-width: 992px){
+			overflow: visible;
+		}
+	}
+	&--lg {
+		.s-intro {
+			padding-bottom: 1em;
+			@media (max-width: 991px){
+				padding-bottom: 3em;
+			}
+		}
+	}
 	&--blue {
 		background-color: $bg-light-blue;
+	}
+	&--green {
+		background-color: #D7F4DF;
+	}
+	&--orange {
+		background-color: $bg-light-orange;
+	}
+	&__row {
+		@media (min-width: 992px){
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__text {
+		@media (min-width: 992px){
+			order: -1;
+			&--lg {
+				max-width: 500px;
+				.h1 {
+					width: 110%;
+				}
+			}
+			&--md {
+				max-width: 420px;
+			}
+		}
+		@media (min-width: 1200px){
+			margin-right: -100px;
+			&--lg {
+				max-width: 624px;
+				.h1 {
+					width: 110%;
+				}
+			}
+			&--md {
+				max-width: 510px;
+			}
+		}
+	}
+	&__cta {
+		padding-top: 0.5em;
+	}
+	&__pict {
+		@media (min-width: 992px){
+			margin-left: auto;
+			margin-right: -80px;
+		}
+		@media (max-width: 991px){
+			max-width: 480px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media (max-width: 500px){
+			max-width: 360px;
+		}
+		@media (max-width: 400px){
+			max-width: 270px;
+		}
+	}
+}
+.intro + section {
+	z-index: 1;
+	background-color: #fff;
+}
+.decor-blur {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 89.8vmin;
+		height: 89.8vmin;
+		max-width: 878px;
+		max-height: 878px;
+		top: 50%;
+		left: 22%;
+		transform: translate(-50%,-50%);
+		opacity: .36;
+		@media (max-width: 991px){
+			top: 10%;
+			left: 50%;
+		}
+		@media (max-width: 600px){
+			opacity: 0.2;
+		}
+	}
+	&--blue:before {
+		background: radial-gradient(53.67% 53.67% at 50% 50%, rgba(112, 193, 183, 0.67) 28.13%, rgba(255, 255, 255, 0) 100%);
 	}
 }

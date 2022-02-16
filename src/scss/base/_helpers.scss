@@ -59,9 +59,14 @@
 [hidden] {
 	display: none!important;
 }
+.hidden-sm {
+	@media (max-width: 719px){
+		display: none!important;
+	}
+}
 .hidden-xs {
 	@media (max-width: 370px){
-		display: none;
+		display: none!important;
 	}
 }
 .text-center {
