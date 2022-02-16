@@ -21,6 +21,60 @@
 	.lang {
 		position: relative;
 		z-index: 3;
+		padding-left: 1em;
+		font-size: 17px;
+		@media (min-width: 1024px){
+			&:before {
+				content: '|';
+				position: absolute;
+				left: 0;
+			}
+		}
+		@media (max-width: 1023px){
+			z-index: 99;
+		}
+		@media (max-width: 600px){
+			top: 2px;
+		}
+		& > span {
+			user-select: none;
+			position: relative;
+			z-index: 1;
+		}
+		&__list {
+			position: absolute;
+			border: 1px solid transparent;
+			transition: .3s;
+			top: -.4em;
+			left: -1em;
+			padding: 2.4em 1em .2em 1em;
+			width: 5em;
+			opacity: 0;
+			visibility: hidden;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border-radius: 2px;
+			a {
+				display: block;
+				text-shadow: 0 0;
+				padding: 0.1em;
+				width: 100%;
+				text-align: center;
+				color: $accent;
+			}
+		}
+		&:hover {
+			.lang__list {
+				border-color: $border;
+				background-color: $bg-light;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		@media (max-width: 1023px){
+			margin-left: auto;
+		}
 	}
 	&>.container {
 		padding-top: 2em;
@@ -31,7 +85,6 @@
 		gap: 2.2em;
 		position: static;
 		@media (max-width: 1100px){
-			padding-top: .9em;
 			padding-bottom: .9em;
 		}
 		@media (max-width: 767px){
@@ -91,7 +144,7 @@
 			right: 0;
 			background-color: #fff;
 			&--open {
-				max-height: 120vh;
+				max-height: 600vh;
 				pointer-events: auto;
 				z-index: 99;
 				box-shadow: 0 8px 6px rgba(3,3,3,.04);
@@ -112,9 +165,10 @@
 			}
 			.sub-menu {
 				margin-right: 0;
-				padding: .4em 1em;
+				padding: .4em .2em;
 				&> span {
 					display: inline-block;
+					font-weight: bold;
 				}
 				&-dialog {
 					position: relative;
@@ -131,9 +185,11 @@
 			&__link {
 				display: block;
 				width: 100%;
-				padding: .4em 1em;
 				width: fit-content;
 				min-width: 50%;
+				padding: .4em .2em;
+				font-weight: bold;
+				font-size: 1em;
 				&.active {
 					color: $accent;
 					font-weight: 700;
@@ -142,40 +198,35 @@
 		}
 	}
 }
-.sub-menu.open .sub-menu-dialog {
-	@media (max-width: 1023px) {
-		height: auto;
-		opacity: 1;
-		visibility: visible;
-		padding: 0.4em 0 0;
-	}
-}
 .sub-menu {
 	user-select: none;
 	span {
 		transition: .2s;
 		position: relative;
 		z-index: 3;
-		@media (min-width: 1024px){
+		&:before {
+			content: '';
+			position: absolute;
+			top: 102%;
+			left: 50%;
+			width: 20px;
+			height: 20px;
+			background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.99266 16.2412L9.99266 3.74954' stroke='%2370C1A0' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M14.9818 11.2376L10.001 16.251L5.02016 11.2376' stroke='%2370C1A0' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+			opacity: 0;
+			transition: .3s;
+			visibility: hidden;
+			transform: translateX(-50%);
+		}
+		@media (max-width: 1023px){
+			width: 100%;
 			&:before {
-				content: '';
-				position: absolute;
-				top: 100%;
-				width: 100%;
-				border-bottom: 1px solid $border;
-				transition: .3s;
-				opacity: 0;
-				visibility: hidden;
-				transform: scaleX(0);
-				transform-origin: left top;
+				transform: translate(-50%,-50%);
+				left: 97%;
+				top: 50%;
+				opacity: 1;
+				visibility: visible;
 			}
 		}
-	}
-	&:after {
-		position: absolute;
-		opacity: .7;
-		right: -20px;
-		top: 42%;
 	}
 	@media (min-width: 1024px){
 		.sub-menu-dialog {
@@ -189,16 +240,33 @@
 			visibility: hidden;
 			pointer-events: none;
 			transition: .2s;
-			a {
-				display: block;
-				width: fit-content;
-				white-space: nowrap;
-				line-height: 1.2;
+			.container {
+				position: relative;
+				padding-top: 2.2em;
+				padding-bottom: 1em;
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+				&:before {
+					content: '';
+					position: absolute;
+					left: 15px;
+					right: 15px;
+					top: -10px;
+					border-top: 1px solid $border;
+				}
+			}
+			.h4 {
+				padding-bottom: 1.3em;
+				max-width: 200px;
 			}
 		}
 		&:hover {
 			span {
 				color: $accent;
+				&:before{
+					opacity: 1;
+					visibility: visible;
+				}
 			}
 			&:before {
 				transform: scaleX(1);
@@ -212,11 +280,76 @@
 			}
 		}
 	}
+	@media (min-width: 1200px){
+		.sub-menu-dialog {
+			.container {
+				&:after {
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 54%;
+					width: 290px;
+					height: 290px;
+					max-height: 74%;
+					transform: translateY(-50%);
+					background: url(../img/general/menu.svg) center no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+	}
+}
+.sub-menu-dialog {
+	a {
+		display: block;
+		width: fit-content;
+		color: inherit;
+		font-size: em(15);
+		position: relative;
+		padding: .32em 0;
+		margin-bottom: .3em;
+		line-height: 1.2;
+		&:after {
+			content: '';
+			position: absolute;
+			overflow: hidden;
+			left: 0;
+			bottom: 0;
+			width: 0;
+			border-bottom: 1px solid $accent;
+			transition: all .3s cubic-bezier(.175,.885,.32,1.075);
+		}
+		&:hover {
+			&:after {
+				width: 100%;
+			}
+		}
+	}
+}
+.sub-menu.open {
+	@media (max-width: 1023px) {
+		.sub-menu-dialog {
+			height: auto;
+			opacity: 1;
+			visibility: visible;
+			padding: .8em 0 0;
+		}
+		span {
+			&:before {
+				transform: translate(-50%,-50%) scaleY(-1);
+			}
+		}
+	}
+}
+.sub-menu-item {
+	@media (max-width: 1023px){
+		padding-bottom: 0.6em;
+	}
 }
 .btn--menu {
 	position: relative;
 	padding: 5px;
-	margin-left: 1em;
+	margin-right: 0.2em;
 	width: 37px;
 	height: 37px;
 	z-index: 3;

@@ -17,14 +17,15 @@
 		}
 	};
 
+	const menuTrigger = document.querySelector(".btn--menu");
+	const subMenus = document.querySelectorAll(".sub-menu");
+	const header = menuTrigger.closest(".header");
+
 	document.addEventListener('DOMContentLoaded', function(){
 		setActiveMenuItem();
 		//user menu
-		const menuTrigger = document.querySelector(".btn--menu");
-		const subMenus = document.querySelectorAll(".sub-menu");
 
 		menuTrigger?.addEventListener("click", function() {
-			const header = menuTrigger.closest(".header");
 			header.classList.toggle("header--open");
 			header.querySelector(".menu").classList.toggle("menu--open");
 			[...subMenus].forEach(function(el){
@@ -40,10 +41,18 @@
 			})
 		};
 
+		//close dialogs
+		window.addEventListener('click', function(e) {
+			if (!e.target.closest(".header")) {
+				header.classList.remove("header--open");
+				header.querySelector(".menu").classList.remove("menu--open");
+			}
+		});
+
 		const stickyHeader = document.getElementById("subheader");
 		if (stickyHeader) {
 			const mainNavLinks = [...stickyHeader.querySelectorAll("a")].filter(item => !item.classList.contains("subheader__link"));
-			window.addEventListener('scroll', function(e) {
+			window.addEventListener('scroll', function() {
 				let winTop = window.scrollY;
 				winTop >= 90 ?
 				stickyHeader.classList.add("subheader--sticky") :
@@ -61,11 +70,20 @@
 			});
 		};
 
-	// copyright - year
-	const year = document.getElementById("year");
-	if (year) {
-		year.innerHTML = new Date().getFullYear();
-	};
+		// anhor
+		const btnScrollDown = document.getElementById("btn-scroll-down");
+		btnScrollDown?.addEventListener('click', function(e) {
+			e.preventDefault();
+			const parent = btnScrollDown.closest(".intro");
+			const target = parent.nextElementSibling;
+			target.scrollIntoView({ behavior: "smooth", block: "start" });
+		});
+
+		// copyright - year
+		const year = document.getElementById("year");
+		if (year) {
+			year.innerHTML = new Date().getFullYear();
+		};
 
 
 });
