@@ -1,4 +1,21 @@
 .s--simply {
-	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-top: 6em;
+	padding-bottom: 6em;
+}
+.simply__divider {
+	position: relative;
+	padding-bottom: 5em;
+	margin-bottom: 5em;
+	@media (max-width: 1200px){
+		padding-bottom: 3.6em;
+		margin-bottom: 3.6em;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		bottom: 0;
+		border: 1px solid $border;
+	}
 }

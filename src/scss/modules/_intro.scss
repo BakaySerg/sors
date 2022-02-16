@@ -107,3 +107,80 @@
 		background: radial-gradient(53.67% 53.67% at 50% 50%, rgba(112, 193, 183, 0.67) 28.13%, rgba(255, 255, 255, 0) 100%);
 	}
 }
+.decor {
+	position: relative;
+	z-index: 1;
+	width: fit-content;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+	}
+	&--o {
+		padding-right: 7.2em;
+		&:before {
+			width: 9.7em;
+			height: 9.7em;
+			background-image: url(../img/general/icon-sors.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			right: 0;
+			top: -2.5em;
+		}
+	}
+	&--lowered {
+		@media (min-width: 1024px){
+			top: 3em;
+		}
+	}
+}
+.text-bg {
+	display: inline-block;
+	position: relative;
+	padding-right: .5em;
+	z-index: 1;
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 104%;
+		left: -.08em;
+		height: 80%;
+		top: 4%;
+		background-color: $bg-light-blue;
+	}
+}
+[data-double-text] {
+	&:before {
+		content: attr(data-double-text);
+		font-weight: bold;
+		display: block;
+		font-size: 2em;
+	}
+}
+.secon {
+	&__row {
+		@media (min-width: 1024px){
+			display: flex;
+			justify-content: space-between;
+			gap: 3em;
+		}
+	}
+	&__title {
+		flex-shrink: 0;
+	}
+	&__text {
+		@media (min-width: 1024px){
+			max-width: 722px;
+		}
+	}
+}
+.benefits {
+	&__row {
+		@media (min-width: 1024px){
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			gap: 1.6em;
+		}
+	}
+}

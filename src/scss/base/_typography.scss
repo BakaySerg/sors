@@ -16,6 +16,17 @@
 		font-size: 1.6em;
 	}
 }
+.h2 {
+	font-size: em(40);
+	line-height: 1.375;
+	margin-bottom: 1.6em;
+	@media (max-width: 1280px){
+		font-size: 2em;
+	}
+	@media (max-width: 500px){
+		font-size: 1.4em;
+	}
+}
 .h3 {
 	font-size: em(20);
 	font-weight: bold;
@@ -36,4 +47,22 @@
 		font-size: em(20);
 		padding-bottom: 1.1em;
 	}
+}
+.subtitle {
+	font-size: em(14);
+	display: block;
+	font-style: normal;
+	font-weight: bold;
+	color: $accent;
+	margin-bottom: .6em;
+	letter-spacing: .03em;
+}
+p {
+	padding-bottom: 1em;
+}
+.strong {
+	font-size: em(24);
+}
+.enlarged {
+	font-size: em(20);
 }
