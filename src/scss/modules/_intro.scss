@@ -147,6 +147,51 @@
 			top: 3em;
 		}
 	}
+	&--middle {
+		align-self: center;
+	}
+	&--a {
+		padding-right: 7.2em;
+		@media (max-width: 991px){
+			padding-right: 4em;
+		}
+		&:before {
+			width: 12.4em;
+			height: 12.4em;
+			background-image: url(../img/home/call-decor.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			right: -6.6em;
+			top: -8.3em;
+			@media (max-width: 1100px){
+				width: 8em;
+				height: 8em;
+				opacity: 0.8;
+				right: -1em;
+				top: -7em;
+			}
+			@media (max-width: 1023px){
+				top: -3em;
+				right: -5em;
+				width: 6em;
+				height: 6em;
+			}
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: -2;
+			left: 86%;
+			top: 140%;
+			height: 66vmin;
+			width: 66vmin;
+			max-width: 657px;
+			transform: translate(-50%,-50%);
+			background: radial-gradient(53.67% 53.67% at 50% 50%, rgba(112, 193, 183, 0.67) 23.44%, rgba(255, 255, 255, 0) 100%);
+			background-size: contain;
+			opacity: 0.3;
+		}
+	}
 }
 .text-bg {
 	display: inline-block;
@@ -213,6 +258,20 @@
 			grid-template-columns: repeat(3,1fr);
 			gap: 1.6em;
 		}
+		&--quadro {
+			@media (min-width: 768px){
+				display: grid;
+				grid-template-columns: repeat(2,1fr);
+				gap: .3em 1em;
+			}
+			@media (min-width: 1024px){
+				grid-template-columns: repeat(4,1fr);
+				gap: 2em;
+			}
+			@media (min-width: 1100px){
+				gap: 2.4em;
+			}
+		}
 	}
 	&__title {
 		@media (min-width: 360px){
@@ -229,5 +288,44 @@
 	&__headline {
 		font-size: em(20);
 		line-height: 1.2;
+	}
+}
+.argum {
+	&__row {
+		@media (min-width: 540px){
+			display: grid;
+			gap: 1.8em;
+			grid-template-columns: repeat(2,1fr);
+		}
+		@media (min-width: 1000px){
+			grid-template-columns: repeat(4,1fr);
+		}
+		@media (max-width: 1024px){
+			padding-left: .6em;
+		}
+	}
+	&__item {
+		@media (max-width: 539px){
+			&:not(:last-child) {
+				padding-bottom: 1.8em;
+			}
+		}
+	}
+	&__title {
+		display: flex;
+		gap: 1.2em;
+		padding-bottom: 2em;
+		align-items: center;
+		.h3 {
+			line-height: 1.3;
+			position: relative;
+			z-index: 1;
+		}
+		@media (min-width: 768px){
+			max-width: 200px;
+		}
+		@media (max-width: 1024px){
+			padding-bottom: 1.1em;
+		}
 	}
 }

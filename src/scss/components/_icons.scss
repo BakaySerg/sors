@@ -2,7 +2,7 @@
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	@media (max-width: 991px){
+	@media (max-width: 1100px){
 		width: 36px;
 		height: 36px;
 	}
@@ -12,5 +12,27 @@
 	}
 	&--accent {
 		color: $accent;
+	}
+	&-decor {
+		position: relative;
+		z-index: 1;
+		flex-shrink: 0;
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			background-color: $bg-light;
+			width: 4.83em;
+			height: 4.83em;
+			border-radius: 50%;
+			left: -1em;
+			top: -1.3em;
+			@media (max-width: 1100px){
+				width: 4em;
+				height: 4em;
+				top: -.9em;
+				left: -.6em;
+			}
+		}
 	}
 }

@@ -13,6 +13,27 @@
 .s--blue {
 	background-color: $bg-light-blue;
 }
+.s--muted {
+	background-color: $bg-light;
+}
+.s--dark {
+	background-color: $bg-dark;
+	color: #fff;
+}
+.s--geometry {
+	@media (min-width: 1024px){
+		background-image: url(../img/home/pattern.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: right 0;
+	}
+	@media (max-width: 1366px){
+		background-position: 148% 0;
+	}
+	@media (max-width: 1200px){
+		background-position: 848% 0;
+	}
+}
 .simply__divider {
 	position: relative;
 	padding-bottom: 5em;
@@ -95,10 +116,13 @@
 			&--turned {
 				flex-direction: row-reverse;
 			}
+			&--alined {
+				align-items: center;
+			}
 		}
 	}
 	&__pict {
-		flex-shrink: 0;
+		flex-shrink: .05;
 		@media (max-width: 1100px){
 			flex-shrink: .1;
 		}
