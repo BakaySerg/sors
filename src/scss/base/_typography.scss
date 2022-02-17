@@ -19,12 +19,12 @@
 .h2 {
 	font-size: em(40);
 	line-height: 1.375;
-	margin-bottom: 1.6em;
+	margin-bottom: .8em;
 	@media (max-width: 1280px){
 		font-size: 2em;
 	}
-	@media (max-width: 500px){
-		font-size: 1.4em;
+	@media (max-width: 600px){
+		font-size: 1.5em;
 	}
 }
 .h3 {
@@ -35,6 +35,11 @@
 	font-size: em(16);
 	font-weight: bold;
 	color: inherit;
+}
+.h6 {
+	font-size: 1em;
+	font-weight: bold;
+	padding-bottom: 1.6em;
 }
 .overtitle {
 	font-size: em(24);
@@ -50,6 +55,7 @@
 }
 .subtitle {
 	font-size: em(14);
+	text-transform: uppercase;
 	display: block;
 	font-style: normal;
 	font-weight: bold;
@@ -60,9 +66,64 @@
 p {
 	padding-bottom: 1em;
 }
+.text-lg {
+	@media (min-width: 1100px){
+		font-size: em(20);
+	}
+}
+.text-right {
+	@media (min-width: 992px){
+		padding-right: 1em;
+		text-align: right;
+	}
+}
 .strong {
 	font-size: em(24);
+	@media (max-width: 600px){
+		font-size: 1.1em;
+	}
 }
 .enlarged {
 	font-size: em(20);
+	@media (max-width: 600px){
+		font-size: 1em;
+	}
+}
+.order-list {
+	counter-reset: item;
+	list-style-type: none;
+	li {
+		display: block;
+		padding-bottom: .8em;
+		padding-left: 1.2em;
+		font-size: em(16);
+		font-weight: bold;
+		position: relative;
+		&:before {
+			content: counter(item, decimal-leading-zero) " ";
+			counter-increment: item;
+			position: absolute;
+			left: 0;
+			font-weight: bold;
+			font-size: 10px;
+			color: $accent;
+			vertical-align: super;
+			margin-right: 0.4em;
+		}
+	}
+}
+.columns-list {
+	@media (min-width: 720px){
+		columns: 2;
+		column-gap: 2.1em;
+	}
+	@media (min-width: 1100px){
+		&--three {
+			columns: 3;
+		}
+	}
+	li {
+		break-inside: avoid;
+		padding-right: .4em;
+	}
 }

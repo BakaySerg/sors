@@ -14,3 +14,11 @@
 	url('../fonts/circe-bold.woff') format('woff');
 	font-weight: 700;
 }
+@font-face {
+	font-family: 'Mulish';
+	src: local('mulish extrabold'),
+	local('mulish-extrabold'),
+	url('../fonts/mulish-extrabold.woff') format('woff2'),
+	url('../fonts/mulish-extrabold.woff') format('woff');
+	font-weight: 800;
+}
