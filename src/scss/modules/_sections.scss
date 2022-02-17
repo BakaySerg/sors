@@ -120,6 +120,16 @@
 				align-items: center;
 			}
 		}
+		@media (max-width: 991px){
+			&:not(:last-child) {
+				padding-bottom: 3.5em;
+			}
+		}
+		@media (max-width: 600px){
+			&:not(:last-child) {
+				padding-bottom: 2.5em;
+			}
+		}
 	}
 	&__pict {
 		flex-shrink: .05;
