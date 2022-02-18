@@ -28,10 +28,58 @@
 		<section class="s--simply">
 			<div class="container">
 				<div class="contact__row">
-					<div class="contact__item"></div>
-					<div class="contact__item"></div>
-					<div class="contact__item"></div>
+					<div class="contact__item">
+						<svg class="icon icon--xs" viewBox="0 0 32 32"><use xlink:href="#i-arrow-right"/></svg>
+						<address class="contact__text">
+							<h3 class="h3">Address</h3>
+							SORS LTD <br>
+							111 Avenue, <br>
+							USA
+						</address>
+					</div>
+					<div class="contact__item">
+						<svg class="icon icon--xs" viewBox="0 0 32 32"><use xlink:href="#i-arrow-right"/></svg>
+						<div class="contact__text">
+							<h3 class="h3">Support</h3>
+							<a href="tel:+070033300033">+0700 333 000 33</a>
+							<a href="mailto:sors.support@mail.com">sors.support@mail.com</a>
+						</div>
+					</div>
+					<div class="contact__item">
+						<svg class="icon icon--xs" viewBox="0 0 32 32"><use xlink:href="#i-arrow-right"/></svg>
+						<div class="contact__text">
+							<h3 class="h3">Customer Service Hours</h3>
+							6AM-6PM / Monday - Friday <br>
+							6 AM - 4 PM / Saturday - Sunday
+						</div>
+					</div>
 				</div>
+			</div>
+			<div class="container contact__box">
+				<div class="contact__content">
+					<em class="subtitle">Contact us</em>
+					<h2 class="h2">Get in <span class="text-bg">Touch</span></h2>
+					<p class="text-lg">Do you have any questions? <br>Leave a request and our manager will contact you shortly!</p>
+				</div>
+				<form class="form" method="post">
+					<div class="form__dual">
+						<input type="text" name="name" class="form__input" placeholder="Your Name" minlength="2" required>
+						<input type="email" name="email" class="form__input" placeholder="Your Email" minlength="2" required>
+					</div>
+					<div class="form__dual">
+						<input type="tel" name="phone" class="form__input" placeholder="Phone" minlength="6" inputmode="numeric" required>
+						<input type="text" name="company" class="form__input" placeholder="Your Company" minlength="2">
+					</div>
+					<textarea class="textarea" name="msg" cols="30" rows="10" placeholder="Tell use more" required></textarea>
+					<div class="form__cta">
+						<div class="captcha"><img src="img/contacts/captcha.png" alt="captcha"></div>
+						<button type="submit" class="btn btn--lg btn--icon btn--success">
+							Send Message
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+						</button>
+					</div>
+				</form>
+
 			</div>
 		</section>
 
