@@ -358,16 +358,78 @@
 	&__slider {
 		.swiper-slide:not(.swiper-slide-active) {
 			opacity: 0 !important;
-			transition: .4s;
+			// transition: .4s;
+			transition: all .4s;
 		}
 		.swiper-slide-active{
-			transition: .4s .1s !important;
+			transition: all .4s, height .7s .7s;
 		}
+	}
+	&__slide {
+		text-align: center;
+		padding-bottom: 1.2em;
+	}
+	&__quote {
+		position: relative;
+		padding: 1.4em 4em 1.2em;
+		&:before,&:after {
+			content: '';
+			position: absolute;
+			background-image: url("data:image/svg+xml,%3Csvg width='21' height='17' viewBox='0 0 21 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.2197 8.38797L20.2197 0.250065L12.0818 0.250064L12.0818 8.38797L16.7321 8.38797C16.7321 10.956 14.6499 13.0382 12.0818 13.0382L12.0818 16.5259C16.5767 16.5259 20.2197 12.8826 20.2197 8.38797ZM0.456473 13.0382L0.456472 16.5259C4.95109 16.5259 8.59438 12.8826 8.59438 8.38797L8.59438 0.250064L0.456474 0.250063L0.456473 8.38797L5.1067 8.38797C5.1067 10.956 3.02453 13.0382 0.456473 13.0382Z' fill='%23193F3F'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 22px;
+			height: 22px;
+		}
+		&:before{
+			left: 2px;
+			@media (max-width: 1024px){
+				top: 2px;
+			}
+		}
+		&:after{
+			right: 2px;
+			transform: rotate(180deg);
+		}
+		@media (max-width: 767px){
+			padding: .7em 1.1em 0.9em;
+			&:before,&:after{
+				width: 16px;
+				height: 16px;
+			}
+			&:before{left: 0;}
+			&:after {right: 0;}
+		}
+	}
+	&__author {
+		word-spacing: .2em;
 	}
 	&__avatar {
 		display: inline-block;
-		width: 80px;
-		height: 80px;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
 		overflow: hidden;
+		background-color: transparent;
+		@media (max-width: 1024px){
+			width: 50px;
+			height: 50px;
+		}
+		@media (max-width: 600px){
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	&__pagin {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2em;
+		padding-bottom: 2em;
+		@media (max-width: 991px){
+			gap: 1.3em;
+			padding-bottom: 1em;
+		}
 	}
 }

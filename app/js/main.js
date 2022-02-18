@@ -82,13 +82,17 @@
 		//slider-testimonials
 		const swiperTest = document.querySelector(".testimon__slider");
 		const arrImgs = swiperTest.getAttribute("data-images").split(',');
-		console.log(arrImgs);
-		const swiperTestimon = new Swiper(".testimon__slider", {
+		new Swiper(swiperTest, {
 			draggable:true,
 			grabCursor: true,
 			centeredSlides: true,
 			spaceBetween: 30,
+			autoHeight: true,
 			effect: "fade",
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: true,
+			},
 			pagination: {
 				el: ".swiper-pagination",
 				renderBullet: function (index, className) {

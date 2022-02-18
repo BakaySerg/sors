@@ -108,6 +108,11 @@
 	opacity: .2;
   margin: 0 .2em;
   transition: .3s;
+  &.testimon__avatar {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    filter: grayscale(1) opacity(.6);
+  }
 }
 button.swiper-pagination-bullet {
 	border: none;
@@ -125,7 +130,10 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
 	opacity: 1;
-  transform: scale(1.1)
+  &.testimon__avatar {
+    transform: scale(1.24);
+    filter: opacity(1);
+  }
 }
 .swiper-controls {
 	display: flex;
@@ -133,6 +141,9 @@ button.swiper-pagination-bullet {
 	align-items: center;
 	padding-top: 2em;
   gap: 2.2em;
+  @media (max-width: 1024px){
+    padding-top: .4em;
+  }
 }
 .swiper-pagination-current {
   font-size: 1.22em;
