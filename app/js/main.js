@@ -80,6 +80,9 @@
 		});
 
 		//slider-testimonials
+		const swiperTest = document.querySelector(".testimon__slider");
+		const arrImgs = swiperTest.getAttribute("data-images").split(',');
+		console.log(arrImgs);
 		const swiperTestimon = new Swiper(".testimon__slider", {
 			draggable:true,
 			grabCursor: true,
@@ -88,6 +91,9 @@
 			effect: "fade",
 			pagination: {
 				el: ".swiper-pagination",
+				renderBullet: function (index, className) {
+					return `<span class="${className} testimon__avatar"><img src="${arrImgs[index]}" alt="avatar" width="87" height="87"></span>`;
+				},
 				clickable: true,
 			}
 		});

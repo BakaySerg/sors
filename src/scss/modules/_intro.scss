@@ -364,4 +364,10 @@
 			transition: .4s .1s !important;
 		}
 	}
+	&__avatar {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		overflow: hidden;
+	}
 }
