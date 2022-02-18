@@ -329,3 +329,39 @@
 		}
 	}
 }
+.brand {
+	&__row {
+		@media (min-width: 360px){
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			gap: 1.2em;
+		}
+		@media (min-width: 700px){
+			grid-template-columns: repeat(3,1fr);
+		}
+		@media (min-width: 1024px){
+			grid-template-columns: repeat(6,1fr);
+		}
+	}
+	&__item {
+		@media (max-width: 1023px){
+			img {
+				margin: auto;
+			}
+		}
+	}
+}
+.testimon {
+	&__box {
+		overflow: hidden;
+	}
+	&__slider {
+		.swiper-slide:not(.swiper-slide-active) {
+			opacity: 0 !important;
+			transition: .4s;
+		}
+		.swiper-slide-active{
+			transition: .4s .1s !important;
+		}
+	}
+}

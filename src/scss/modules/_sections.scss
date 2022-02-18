@@ -10,6 +10,14 @@
 		padding-bottom: 1.8em;
 	}
 }
+.s--mini {
+	padding-top: 4em;
+	padding-bottom: 3em;
+	@media (max-width: 991px){
+		padding-top: 2.4em;
+		padding-bottom: 1.6em;
+	}
+}
 .s--blue {
 	background-color: $bg-light-blue;
 }
@@ -26,6 +34,9 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: right 0;
+	}
+	@media (min-width: 2000px){
+		background-position: 66% 0;
 	}
 	@media (max-width: 1366px){
 		background-position: 148% 0;
@@ -134,7 +145,7 @@
 	&__pict {
 		flex-shrink: .05;
 		@media (max-width: 1100px){
-			flex-shrink: .1;
+			flex-shrink: .3;
 		}
 		@media (max-width: 991px){
 			padding-bottom: 1.6em;

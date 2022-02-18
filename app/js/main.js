@@ -79,6 +79,19 @@
 			target.scrollIntoView({ behavior: "smooth", block: "start" });
 		});
 
+		//slider-testimonials
+		const swiperTestimon = new Swiper(".testimon__slider", {
+			draggable:true,
+			grabCursor: true,
+			centeredSlides: true,
+			spaceBetween: 30,
+			effect: "fade",
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			}
+		});
+
 		// copyright - year
 		const year = document.getElementById("year");
 		if (year) {
