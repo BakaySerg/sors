@@ -26,7 +26,7 @@ body {
 .wrapper {
 	position: relative;
 	width: 100%;
-	min-height: 50vh;
+	min-height: 20vh;
 	overflow: hidden;
 	@media (max-width: 1023px){
 		overflow: visible;
@@ -63,3 +63,5 @@ body {
 @import "modules/intro";
 @import "modules/sections";
 
+//pages
+@import "pages/contacts";

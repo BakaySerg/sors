@@ -81,26 +81,28 @@
 
 		//slider-testimonials
 		const swiperTest = document.querySelector(".testimon__slider");
-		const arrImgs = swiperTest.getAttribute("data-images").split(',');
-		new Swiper(swiperTest, {
-			draggable:true,
-			grabCursor: true,
-			centeredSlides: true,
-			spaceBetween: 30,
-			autoHeight: true,
-			effect: "fade",
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: true,
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				renderBullet: function (index, className) {
-					return `<span class="${className} testimon__avatar"><img src="${arrImgs[index]}" alt="avatar" width="87" height="87"></span>`;
+		if (swiperTest) {
+			const arrImgs = swiperTest.getAttribute("data-images").split(',');
+			new Swiper(swiperTest, {
+				draggable:true,
+				grabCursor: true,
+				centeredSlides: true,
+				spaceBetween: 30,
+				autoHeight: true,
+				effect: "fade",
+				autoplay: {
+					delay: 6000,
+					disableOnInteraction: true,
 				},
-				clickable: true,
-			}
-		});
+				pagination: {
+					el: ".swiper-pagination",
+					renderBullet: function (index, className) {
+						return `<span class="${className} testimon__avatar"><img src="${arrImgs[index]}" alt="avatar" width="87" height="87"></span>`;
+					},
+					clickable: true,
+				}
+			});
+		};
 
 		// copyright - year
 		const year = document.getElementById("year");
