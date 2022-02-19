@@ -121,14 +121,16 @@
 			}
 			&.active {
 				color: $accent;
-				font-weight: 500;
-				&:after {
-					content: '';
-					position: absolute;
-					border-bottom: 2px solid;
-					bottom: 0;
-					left: -6%;
-					right: -6%;
+				font-weight: bold;
+				@media (min-width: 1024px){
+					&:after {
+						content: '';
+						position: absolute;
+						border-bottom: 2px solid;
+						bottom: 1px;
+						left: -4%;
+						right: -4%;
+					}
 				}
 			}
 		}
