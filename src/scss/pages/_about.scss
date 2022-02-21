@@ -1,0 +1,42 @@
+.s-dark-decor {
+	@media (min-width: 768px){
+		background-image:
+		url(../img/about/decor-1.svg),
+		url(../img/about/decor-2.svg);
+		background-repeat: no-repeat;
+		background-position:  41% 0, 82% bottom;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 50%;
+			width: 100%;
+			background-color: rgba(255,255,255,.05);
+		}
+	}
+	@media (max-width: 1366px){
+		background-size: 150px auto, 70px auto;
+	}
+	@media (max-width: 1200px){
+		background-position:  34% 0, 90% bottom;
+	}
+	@media (max-width: 991px){
+		background-size: 130px auto, 60px auto;
+	}
+}
+.dark {
+	&__slider {
+		overflow: hidden;
+	}
+	&__slide {
+		&:before {
+			padding-bottom: .8em;
+			line-height: 1;
+			margin-bottom: .6em;
+			max-width: 33.2%;
+			border-bottom: 1px solid rgba(255,255,255,.26);
+			opacity: .8;
+		}
+	}
+}

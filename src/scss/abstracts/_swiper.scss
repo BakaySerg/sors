@@ -109,6 +109,9 @@
 	opacity: .5;
   margin: 0 .6em;
   transition: .3s;
+  @media (max-width: 500px){
+    margin: 0 .3em;
+  }
   &.testimon__avatar {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     opacity: 1;
@@ -150,6 +153,17 @@ button.swiper-pagination-bullet {
     justify-content: flex-start;
     .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
       transform: scale(.8);
+    }
+    @media (max-width: 500px){
+      padding-top: 0;
+    }
+  }
+  &--dark {
+    .swiper-pagination-bullet {
+      background-color: #fff;
+      &:not(.swiper-pagination-bullet-active) {
+        transform: scale(.8);
+      }
     }
   }
 }

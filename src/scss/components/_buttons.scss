@@ -32,6 +32,10 @@
 		&:hover {
 			background-color: lighten($text, 4%);
 		}
+		@media (max-width: 400px){
+			font-size: 13px;
+			min-height: 50px;
+		}
 	}
 	&--icon {
 		display: inline-flex;

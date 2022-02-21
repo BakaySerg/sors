@@ -119,6 +119,33 @@
 			});
 		};
 
+		const darkSlider = document.querySelector(".dark__slider");
+		if (darkSlider) {
+			new Swiper(darkSlider, {
+				draggable:true,
+				grabCursor: true,
+				centeredSlides: true,
+				spaceBetween: 30,
+				autoHeight: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 20,
+					centeredSlides:true,
+				},
+				720: {
+					slidesPerView: 2,
+					spaceBetween: 34,
+					centeredSlides:false,
+
+				}}
+			});
+		};
+
 
 		// copyright - year
 		const year = document.getElementById("year");
