@@ -105,14 +105,15 @@
 	height: 9px;
 	display: inline-block;
 	border-radius: 50%;
-	background: #2C374D;
-	opacity: .2;
-  margin: 0 .2em;
+	background: $text;
+	opacity: .5;
+  margin: 0 .6em;
   transition: .3s;
   &.testimon__avatar {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     opacity: 1;
     filter: grayscale(1) opacity(.6);
+    margin: 0 .3em;
   }
 }
 button.swiper-pagination-bullet {
@@ -141,9 +142,15 @@ button.swiper-pagination-bullet {
 	justify-content: center;
 	align-items: center;
 	padding-top: 2em;
-  gap: 2.2em;
   @media (max-width: 1024px){
     padding-top: .4em;
+  }
+  &--intro {
+    padding-top: 0.4em;
+    justify-content: flex-start;
+    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+      transform: scale(.8);
+    }
   }
 }
 .swiper-pagination-current {

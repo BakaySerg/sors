@@ -101,6 +101,16 @@
 	&__cta {
 		padding-top: 0.5em;
 	}
+	&__slider {
+		padding-top: 0.5em;
+		overflow: hidden;
+		max-width: 470px;
+	}
+	&__slide {
+		.h3 {
+			padding-bottom: 0.8em;
+		}
+	}
 	&__pict {
 		@media (min-width: 992px){
 			margin-left: auto;
@@ -141,7 +151,7 @@
 		max-width: 878px;
 		max-height: 878px;
 		top: 50%;
-		left: 22%;
+		left: 27%;
 		transform: translate(-50%,-50%);
 		opacity: .36;
 		@media (max-width: 991px){
@@ -299,6 +309,9 @@
 	}
 	&__title {
 		flex-shrink: 0;
+	}
+	&__lim {
+		max-width: 840px;
 	}
 	&__text {
 		@media (min-width: 1024px){

@@ -104,6 +104,22 @@
 			});
 		};
 
+		const introSlider = document.querySelector(".intro__slider");
+		if (introSlider) {
+			new Swiper(introSlider, {
+				draggable:true,
+				grabCursor: true,
+				centeredSlides: true,
+				spaceBetween: 30,
+				autoHeight: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				}
+			});
+		};
+
+
 		// copyright - year
 		const year = document.getElementById("year");
 		if (year) {
