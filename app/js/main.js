@@ -90,10 +90,10 @@
 				spaceBetween: 30,
 				autoHeight: true,
 				effect: "fade",
-				autoplay: {
-					delay: 6000,
-					disableOnInteraction: true,
-				},
+				// autoplay: {
+				// 	delay: 6000,
+				// 	disableOnInteraction: true,
+				// },
 				pagination: {
 					el: ".swiper-pagination",
 					renderBullet: function (index, className) {

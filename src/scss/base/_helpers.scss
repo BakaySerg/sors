@@ -17,6 +17,9 @@
 		line-height: 1.2;
 	}
 }
+.pb-0 {
+	padding-bottom: 0 !important;
+}
 .pb-1 {
 	padding-bottom: 1em;
 	display: block;
@@ -58,6 +61,11 @@
 }
 [hidden] {
 	display: none!important;
+}
+.hidden-md {
+	@media (max-width: 991px){
+		display: none!important;
+	}
 }
 .hidden-sm {
 	@media (max-width: 719px){

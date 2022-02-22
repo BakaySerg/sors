@@ -107,7 +107,9 @@
 	&__slider {
 		padding-top: 0.5em;
 		overflow: hidden;
-		max-width: 470px;
+		@media (min-width: 1024px){
+			max-width: 470px;
+		}
 	}
 	&__slide {
 		.h3 {

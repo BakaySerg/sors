@@ -102,6 +102,9 @@ p {
 		padding: 0.1em;
 		font-size: 1.08em;
 	}
+	@media (max-width: 767px){
+		gap: .6em;
+	}
 }
 .strong {
 	font-weight: bold;
