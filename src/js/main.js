@@ -146,6 +146,23 @@
 			});
 		};
 
+		/**
+			accordions
+		**/
+		const accordionOpen = function () {
+			[].forEach.call(
+				document.querySelectorAll("[data-collapse]"),
+				function (el) {
+					el.addEventListener("click", function (e) {
+						e.preventDefault();
+						let currentItem = this.closest(".accordion__item");
+						currentItem.classList.toggle("expanded");
+					});
+				}
+			);
+		};
+		accordionOpen();
+
 
 		// copyright - year
 		const year = document.getElementById("year");

@@ -90,6 +90,19 @@ p {
 .font-bold {
 	font-weight: bold;
 }
+.phrase {
+	font-size: em(21);
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	gap: 1.5em;
+	p {padding-bottom: 0;}
+	a {
+		color: $bg-dark-blue;
+		padding: 0.1em;
+		font-size: 1.08em;
+	}
+}
 .strong {
 	font-weight: bold;
 	font-size: em(24);
