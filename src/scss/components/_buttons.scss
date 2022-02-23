@@ -98,21 +98,21 @@
 	bottom: 1em;
 	left: 50%;
 	transform: translateX(-50%);
-	.dot {
-		width: 8px;
-		height: 8px;
-		border-radius: 50%;
-		background-color: $accent;
-		animation: fade 2.2s ease infinite;
-		opacity: 0;
-		transform: scale(.7);
-		transform-origin: center;
-		&:nth-child(2) {
-			animation-delay: .3s;
-		}
-		&:nth-child(3) {
-			animation-delay: .6s;
-		}
+}
+.dot {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: $accent;
+	animation: fade 2.2s ease infinite;
+	opacity: 0;
+	transform: scale(.7);
+	transform-origin: center;
+	&:nth-child(2) {
+		animation-delay: .3s;
+	}
+	&:nth-child(3) {
+		animation-delay: .6s;
 	}
 }
 @keyframes fade {

@@ -13,7 +13,7 @@
 				padding-bottom: 3em;
 			}
 			@media (max-width: 400px){
-				padding-bottom: 2em;
+				padding-bottom: 1.2em;
 			}
 		}
 	}
@@ -122,6 +122,7 @@
 	&__pict {
 		@media (min-width: 992px){
 			margin-left: auto;
+			max-width: 720px;
 		}
 		@media (max-width: 991px){
 			max-width: 480px;
@@ -139,6 +140,9 @@
 .intro--lg {
 	.intro__pict {
 		@media (min-width: 992px){
+			margin-right: -50px;
+		}
+		@media (min-width: 1200px){
 			margin-right: -80px;
 		}
 	}
@@ -164,7 +168,7 @@
 		opacity: .36;
 		@media (max-width: 991px){
 			top: 10%;
-			left: 50%;
+			left: 34%;
 		}
 		@media (max-width: 600px){
 			opacity: 0.2;
