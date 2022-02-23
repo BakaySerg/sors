@@ -184,6 +184,7 @@
 	position: relative;
 	z-index: 1;
 	width: fit-content;
+	max-width: 575px;
 	&:before {
 		content: '';
 		position: absolute;
@@ -215,6 +216,22 @@
 			@media (max-width: 600px){
 				width: 6em;
 				height: 6em;
+				top: -1.4em;
+			}
+		}
+	}
+	&--oo {
+		@media (min-width: 1201px){
+			padding-right: 5em;
+			max-width: 606px;
+			&:before {
+				top: 78%;
+				right: 28%;
+			}
+		}
+		@media (max-width: 1200px){
+			max-width: 800px;
+			&:before {
 				top: -1.4em;
 			}
 		}
@@ -333,7 +350,13 @@
 		@media (min-width: 1024px){
 			display: flex;
 			justify-content: space-between;
+			align-items: flex-start;
 			gap: 3em;
+		}
+		&--lg {
+			@media (max-width: 1200px){
+				display: block;
+			}
 		}
 	}
 	&__title {

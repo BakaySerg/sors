@@ -208,3 +208,36 @@
 		grid-template-columns: repeat(5,1fr);
 	}
 }
+[data-number]:before {
+	content: attr(data-number);
+	display: block;
+	font-weight: bold;
+	font-size: 10px;
+	color: $accent;
+}
+.news {
+	&__row {
+		padding-top: 1em;
+		@media (min-width: 1024px){
+			padding-top: 1.6em;
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			gap: 1.2em;
+		}
+	}
+	&__item {
+		@media (min-width: 720px) and (max-width: 1023px){
+			display: flex;
+			gap: 1.5em;
+		}
+		@media (max-width: 1023px){
+			padding-bottom: 2.4em;
+		}
+	}
+	&__pict {
+		padding-bottom: 2.2em;
+		@media (min-width: 720px) and (max-width: 1023px){
+			flex-shrink: .2;
+		}
+	}
+}

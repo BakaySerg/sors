@@ -60,7 +60,7 @@
 
 				mainNavLinks?.forEach(link => {
 					let sec = document.querySelector(link.hash);
-						if (sec.offsetTop <= winTop + 5 && sec.offsetTop + sec.offsetHeight > winTop + 5) {
+						if (sec.offsetTop <= winTop + 10 && sec.offsetTop + sec.offsetHeight > winTop + 10) {
 							link.classList.add("current");
 						} else {
 							link.classList.remove("current");

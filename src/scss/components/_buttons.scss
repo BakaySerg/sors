@@ -57,6 +57,27 @@
 			}
 		}
 	}
+	&--go {
+		font-size: em(14);
+		font-weight: bold;
+		padding: .44em 0;
+		margin-top: .2em;
+		text-transform: uppercase;
+		display: inline-flex;
+		align-items: center;
+		gap: .8em;
+		@media (max-width: 767px){
+			font-size: em(16);
+		}
+		& > .icon {
+			width: 20px;
+			height: 20px;
+			margin-top: -2px;
+		}
+		&:hover {
+			color: $accent;
+		}
+	}
 	&--success {
 		background-color: $accent;
 		box-shadow: 0px 3px 6px rgba(25, 63, 63, 0.1);
