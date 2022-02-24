@@ -104,22 +104,38 @@
 		padding: 4em 3.3em 5em;
 		background-color: #fff;
 		border: 1px solid $accent;
+		position: relative;
+		@media (max-width: 991px){
+			padding: 3em 2em 4em;
+		}
 	}
 	&__cta {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 1em;
+		@media (max-width: 600px){
+			gap: 0.6em;
+			.btn--lg {
+				min-width: 150px;
+			}
+		}
 	}
 	&__title {
 		display: flex;
 		align-items: center;
 		gap: 2em;
+		.h2 {
+			line-height: 1.26;
+		}
 	}
 	&__steps {
 		margin-left: auto;
+		padding-top: 0.3em;
 		padding-bottom: .3em;
 		word-spacing: .2em;
+		white-space: nowrap;
+		align-self: flex-start;
 		b {
 			font-size: 1.33em;
 			color: $accent;
@@ -132,11 +148,20 @@
 		justify-content: center;
 		padding-top: 2em;
 		padding-bottom: 4em;
+		@media (max-width: 1400px){
+			grid-template-columns: repeat(auto-fit,minmax(9%,170px));
+			gap: 1.1em;
+		}
+		@media (max-width: 1100px){
+			grid-template-columns: repeat(auto-fit,minmax(9%,140px));
+			gap: 1.1em;
+		}
 	}
 	&__switcher {
 		flex: .2 .2 auto;
 		max-width: 186px;
 		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, .03);
 		[type=radio],[type=checkbox] {
 			position: absolute;
 			transform: scale(0);
@@ -151,6 +176,15 @@
 				border-radius: 2.22em;
 				background-color: $bg-light-blue;
 				transition: .3s ease;
+				@media (max-width: 1100px){
+					padding: 1.6em .4em 1.5em;
+				}
+				@media (max-width: 991px){
+					padding: 1.2em .4em 1.1em;
+				}
+				@media (max-width: 767px){
+					padding: 1em .4em 0.9em;
+				}
 			}
 			&:checked + .calc__inner {
 				background-color: $accent;
