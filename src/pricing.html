@@ -40,7 +40,185 @@
 
 		<!-- steps -->
 		<section class="s--simply s--geometry" id="calculator">
-			<div class="container"></div>
+			<div class="container container--lg tabs-content">
+				<!-- 1-t tab -->
+				<div id="t-1" class="calc__pane" data-tab="active">
+					<em class="subtitle">Calculator</em>
+					<div class="calc__title">
+						<h2 class="h2">What is the number of customer requests monthly?</h2>
+						<div class="calc__steps"><b>01</b> / 06</div>
+					</div>
+					<div class="calc__choice">
+						<label class="calc__switcher">
+							<input type="radio" name="r1">
+							<div class="calc__inner">Up to 200</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r1" checked>
+							<div class="calc__inner">200 - 500</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r1">
+							<div class="calc__inner">500 - 1 000</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r1">
+							<div class="calc__inner">1 000 - 2 000</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r1">
+							<div class="calc__inner">Over 2 000</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r1">
+							<div class="calc__inner">Not sure</div>
+						</label>
+					</div>
+					<div class="calc__cta">
+						<button type="button" class="btn btn--md btn--glass" aria-label="switch tab" data-trigger-tab="t-0" disabled>Prev</button>
+						<button type="button" class="btn btn--lg btn--icon" aria-label="switch tab" data-trigger-tab="t-2">
+							Next
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+						</button>
+					</div>
+				</div>
+
+				<!-- 2 -->
+				<div id="t-2" class="calc__pane" data-tab="hidden">
+					<em class="subtitle">Calculator</em>
+					<div class="calc__title">
+						<h2 class="h2">What hours of operation are you looking for?</h2>
+						<div class="calc__steps"><b>02</b> / 06</div>
+					</div>
+					<div class="calc__choice">
+						<label class="calc__switcher">
+							<input type="radio" name="r2">
+							<div class="calc__inner">24 / 7 / 365</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r2">
+							<div class="calc__inner">Business hours</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r2">
+							<div class="calc__inner">24 / 5</div>
+						</label>
+					</div>
+					<div class="calc__cta">
+						<button type="button" class="btn btn--md btn--glass" aria-label="switch tab" data-trigger-tab="t-1">Prev</button>
+						<button type="button" class="btn btn--lg btn--icon" aria-label="switch tab" data-trigger-tab="t-3">
+							Next
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+						</button>
+					</div>
+				</div>
+				<!-- 3 -->
+				<div id="t-3" class="calc__pane" data-tab="hidden">
+					<em class="subtitle">Calculator</em>
+					<div class="calc__title">
+						<h2 class="h2">What channels of communications do you need?</h2>
+						<div class="calc__steps"><b>03</b> / 06</div>
+					</div>
+					<div class="calc__choice">
+						<label class="calc__switcher">
+							<input type="radio" name="r3">
+							<div class="calc__inner">Phone</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r3">
+							<div class="calc__inner">Email</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r3">
+							<div class="calc__inner">Chat</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r3">
+							<div class="calc__inner">Social Media</div>
+						</label>
+					</div>
+					<div class="calc__cta">
+						<button type="button" class="btn btn--md btn--glass" aria-label="switch tab" data-trigger-tab="t-2">Prev</button>
+						<button type="button" class="btn btn--lg btn--icon" aria-label="switch tab" data-trigger-tab="t-4">
+							Next
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+						</button>
+					</div>
+				</div>
+
+				<!-- 4 -->
+				<div id="t-4" class="calc__pane" data-tab="hidden">
+					<em class="subtitle">Calculator</em>
+					<div class="calc__title">
+						<h2 class="h2">What languages do you need?</h2>
+						<div class="calc__steps"><b>04</b> / 06</div>
+					</div>
+					<div class="calc__choice">
+						<label class="calc__switcher">
+							<input type="radio" name="r4">
+							<div class="calc__inner">English</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r4">
+							<div class="calc__inner">German</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r4">
+							<div class="calc__inner">Other</div>
+						</label>
+					</div>
+					<div class="calc__cta">
+						<button type="button" class="btn btn--md btn--glass" aria-label="switch tab" data-trigger-tab="t-3">Prev</button>
+						<button type="button" class="btn btn--lg btn--icon" aria-label="switch tab" data-trigger-tab="t-5">
+							Next
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+						</button>
+					</div>
+				</div>
+
+				<!-- 5 -->
+				<div id="t-5" class="calc__pane" data-tab="hidden">
+					<em class="subtitle">Calculator</em>
+					<div class="calc__title">
+						<h2 class="h2">What is the desired start date?</h2>
+						<div class="calc__steps"><b>05</b> / 06</div>
+					</div>
+					<div class="calc__choice">
+						<label class="calc__switcher">
+							<input type="radio" name="r5">
+							<div class="calc__inner">In 30 days</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r5">
+							<div class="calc__inner">In 60 days</div>
+						</label>
+						<label class="calc__switcher">
+							<input type="radio" name="r5">
+							<div class="calc__inner">Other</div>
+						</label>
+					</div>
+					<div class="calc__cta">
+						<button type="button" class="btn btn--md btn--glass" aria-label="switch tab" data-trigger-tab="t-4">Prev</button>
+						<button type="button" class="btn btn--lg btn--icon" aria-label="switch tab" data-trigger-tab="t-6">
+							Next
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+						</button>
+					</div>
+				</div>
+				<!-- 6 -->
+				<div id="t-6" class="calc__pane" data-tab="hidden">
+					<em class="subtitle">Almost Done</em>
+					<div class="calc__title">
+						<h2 class="h2">Almost <span class="text-bg">Done</span></h2>
+						<p class="text-lg">Leave your contacts to get a dedicated offer</p>
+					</div>
+
+					<button type="button" class="btn btn--md btn--glass" aria-label="switch tab" data-trigger-tab="t-5">Prev</button>
+
+
+				</div>
+
+			</div>
 		</section>
 
 		<section class="s--simply s--divided" id="shared">
