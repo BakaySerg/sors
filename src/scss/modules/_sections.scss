@@ -85,6 +85,18 @@
 		border: 1px solid $border;
 	}
 }
+.s--divided {
+	&:after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+		width: 100%;
+		max-width: 1252px;
+		border: 1px solid $border;
+	}
+}
 .sm__divider {
 	position: relative;
 	padding-bottom: 2em;

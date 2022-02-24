@@ -144,6 +144,9 @@
 		}
 		@media (min-width: 1200px){
 			margin-right: -80px;
+			&--lifted {
+				margin-top: -70px;
+			}
 		}
 	}
 }

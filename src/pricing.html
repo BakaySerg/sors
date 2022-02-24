@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sors | Pricing</title>
+	@@include('./include/head.html')
+</head>
+<body>
+	<div class="wrapper">
+		@@include('./include/icon-sprite.html')
+		<div class="intro intro--lg intro--orange">
+			@@include('./include/header.html')
+			<div class="subheader" id="subheader">
+				<div class="container">
+					<div class="subheader__title">Pricing</div>
+					<nav class="subheader__menu">
+						<a href="#">Calculator</a>
+						<a href="#">Shared Team</a>
+						<a href="#">Dedicated Team</a>
+					</nav>
+				</div>
+			</div>
+			<!-- s-intro -->
+			<section class="s-intro">
+				<div class="container intro__row">
+					<figure class="intro__pict intro__pict--lifted">
+						<img loading="lazy" srcset="img/pricing/intro.png, img/pricing/intro-2x.png 2x" src="img/pricing/intro.png" alt="intro" width="711" height="726">
+					</figure>
+					<div class="intro__text intro__text--lg decor-blur decor-blur--orange">
+						<h1 class="h1">Pricing</h1>
+						<p class="overtitle">Convenient plans for Shared Team & Dedicated Team</p>
+					</div>
+				</div>
+				<a id="btn-scroll-down" href="#" class="btn btn--scroll hidden-sm" title="Scroll Down">
+					<i class="dot"></i>
+					<i class="dot"></i>
+					<i class="dot"></i>
+				</a>
+			</section>
+		</div>
+
+		<!-- steps -->
+		<section class="s--simply s--geometry"></section>
+
+		<section class="s--simply s--divided">
+			<div class="container">
+				<h2 class="h2">Shared <sapn class="text-bg">Team</sapn></h2>
+				<div class="card__row">
+					<div class="card">
+						<div class="card__top">
+							<div class="card__header">
+								<div class="card__icon">
+									<svg class="icon" viewBox="0 0 32 32"><use xlink:href="img/pricing/sprite.svg#i-rocket"/></svg>
+								</div>
+								<div class="card__title">
+									<h3 class="h3">Startup Shared</h3>
+									<div class="card__subtitle">1/st line</div>
+								</div>
+								<p>Even the most thorough usability testing can't replace the need for good technical support</p>
+							</div>
+						</div>
+						<div class="card__bottom"></div>
+					</div>
+					<div class="card">
+						<div class="card__top">
+							<div class="card__header">
+								<div class="card__icon">
+									<svg class="icon" viewBox="0 0 32 32"><use xlink:href="img/pricing/sprite.svg#i-checkmark"/></svg>
+								</div>
+								<div class="card__title">
+									<h3 class="h3">Basic Shared</h3>
+									<div class="card__subtitle">1/st & 2/nd line</div>
+								</div>
+								<p>Even the most thorough usability testing can't replace the need for good technical support</p>
+							</div>
+						</div>
+						<div class="card__bottom"></div>
+					</div>
+					<div class="card">
+						<div class="card__top">
+							<div class="card__header">
+								<div class="card__icon">
+									<svg class="icon" viewBox="0 0 32 32"><use xlink:href="img/pricing/sprite.svg#i-user-check"/></svg>
+								</div>
+								<div class="card__title">
+									<h3 class="h3">Semi Dedicated</h3>
+									<div class="card__subtitle">1/st & 2/nd line</div>
+								</div>
+								<p>Even the most thorough usability testing can't replace the need for good technical support</p>
+							</div>
+						</div>
+						<div class="card__bottom"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</div><!-- /wrapper -->
+	@@include('./include/footer.html')
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -54,7 +54,7 @@
 			const mainNavLinks = [...stickyHeader.querySelectorAll("a")].filter(item => !item.classList.contains("subheader__link"));
 			window.addEventListener('scroll', function() {
 				let winTop = window.scrollY;
-				winTop >= 90 ?
+				winTop >= 220 ?
 				stickyHeader.classList.add("subheader--sticky") :
 				stickyHeader.classList.remove("subheader--sticky");
 
