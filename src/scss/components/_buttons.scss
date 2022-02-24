@@ -37,6 +37,13 @@
 			min-height: 50px;
 		}
 	}
+	&--light {
+		background-color: $bg-light;
+		color: $text;
+		&:hover {
+			background-color: #fff;
+		}
+	}
 	&--icon {
 		display: inline-flex;
 		align-items: center;

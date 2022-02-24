@@ -67,6 +67,18 @@
 			}
 		}
 	}
+	&--blue {
+		color: #fff;
+		background-color: $bg-dark;
+		&:before {
+			background-color: $bg-dark-blue;
+		}
+		.banner__decor {
+			.dot {
+				background-color: $bg-blue;
+			}
+		}
+	}
 	&__row {
 		@media (min-width: 992px){
 			display: flex;
