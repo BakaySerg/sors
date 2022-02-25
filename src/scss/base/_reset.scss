@@ -38,6 +38,7 @@ section {
 
 a,a:focus {
 	text-decoration:none;
+	color: $accent;
 	outline:0;
 	cursor: pointer;
 	transition: .3s;

@@ -105,6 +105,15 @@
 		background-color: #fff;
 		border: 1px solid $accent;
 		position: relative;
+		&--row {
+			@media (min-width: 1024px){
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 2em;
+				border: 3px solid $bg-green;
+			}
+		}
 		@media (max-width: 991px){
 			padding: 3em 2em 4em;
 		}
@@ -190,6 +199,7 @@
 		max-width: 186px;
 		cursor: pointer;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, .03);
+		user-select: none;
 		[type=radio],[type=checkbox] {
 			position: absolute;
 			transform: scale(0);
@@ -223,5 +233,16 @@
 				color: #fff;
 			}
 		}
+	}
+	&__final {
+		flex-shrink: 0.06;
+		@media (max-width: 1023px){
+			padding-bottom: 2.2em;
+		}
+	}
+}
+.v-center {
+	.subtitle {
+		margin-bottom: 0;
 	}
 }
