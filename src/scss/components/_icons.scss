@@ -30,6 +30,9 @@
 	&--accent {
 		color: $accent;
 	}
+	&--blue {
+		color: $bg-dark;
+	}
 	&-decor {
 		position: relative;
 		z-index: 1;

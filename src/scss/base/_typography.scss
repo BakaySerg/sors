@@ -50,7 +50,10 @@
 .h6 {
 	font-size: 1em;
 	font-weight: bold;
-	padding-bottom: 1.6em;
+	padding-bottom: 1.8em;
+	@media (max-width: 991px){
+		padding-bottom: 1.5em;
+	}
 }
 .overtitle {
 	font-size: em(24);

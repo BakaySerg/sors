@@ -32,6 +32,9 @@
 .s--orange {
 	background-color: $bg-light-orange;
 }
+.s--green {
+	background-color: $bg-green;
+}
 .s--muted {
 	background-color: $bg-light;
 }
@@ -153,6 +156,14 @@
 		padding-bottom: 3.1em;
 		background-color: $accent;
 		color: #fff;
+		&--dark {
+			background-color: $bg-dark;
+			.quote {
+				&:before {
+					background-image: url("data:image/svg+xml,%3Csvg width='59' height='59' viewBox='0 0 59 59' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M46.8778 29.2995L46.8778 14.7499L32.3282 14.7499L32.3282 29.2995L40.6423 29.2995C40.6423 33.8909 36.9196 37.6136 32.3282 37.6136L32.3282 43.8491C40.3645 43.8491 46.8778 37.3354 46.8778 29.2995ZM11.5435 37.6136L11.5435 43.8491C19.5793 43.8491 26.0931 37.3354 26.0931 29.2995L26.0931 14.7499L11.5435 14.7499L11.5435 29.2995L19.8576 29.2995C19.8576 33.8909 16.1349 37.6136 11.5435 37.6136Z' fill='%23DAE6EA'/%3E%3C/svg%3E");
+				}
+			}
+		}
 		@media (max-width: 600px){
 			padding-top: 2.8em;
 			padding-bottom: 2.2em;
