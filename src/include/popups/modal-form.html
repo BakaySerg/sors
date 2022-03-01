@@ -1,0 +1,31 @@
+<div class="drawer__item">
+	<button class="drawer__close btn" data-drawer-close aria-label="Close"></button>
+	<div class="drawer__body">
+		<div class="drawer__header">
+			<div class="drawer__title">
+				<div class="text-center">
+					<h2 class="h2">Get in Touch</h2>
+					<p>Do you have any questions? Leave a request and our manager will contact you shortly!</p>
+				</div>
+			</div>
+		</div>
+		<form class="form" method="post">
+			<div class="form__dual">
+				<input type="text" name="name" class="form__input" placeholder="Your Name" minlength="2" required>
+				<input type="email" name="email" class="form__input" placeholder="Email" minlength="2" required>
+			</div>
+			<div class="form__dual">
+				<input type="tel" name="phone" class="form__input" placeholder="Phone" minlength="6" inputmode="numeric" required>
+				<input type="text" name="company" class="form__input" placeholder="Your Company" minlength="2">
+			</div>
+			<textarea class="textarea" name="msg" cols="30" rows="10" placeholder="Your Message"></textarea>
+			<div class="form__cta">
+				<div class="captcha"><img src="img/contacts/captcha.png" alt="captcha"></div>
+				<button type="submit" class="btn btn--lg btn--icon btn--success">
+					Send Message
+					<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
