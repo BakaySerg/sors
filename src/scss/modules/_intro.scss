@@ -279,6 +279,15 @@
 	&--middle {
 		align-self: center;
 	}
+	&--aligned {
+		@media (min-width: 1024px){
+			&::before {
+				top: 58%;
+				right: 2%;
+				transform: translateY(-50%);
+			}
+		}
+	}
 	&--a {
 		padding-right: 7.2em;
 		@media (max-width: 991px){

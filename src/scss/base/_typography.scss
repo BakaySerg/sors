@@ -76,6 +76,9 @@
 	color: $accent;
 	margin-bottom: .6em;
 	letter-spacing: .03em;
+	&--muted {
+		color: $bg-dark-blue;
+	}
 }
 ul {list-style: none;}
 
