@@ -3,6 +3,11 @@
 .mb-0 {
 	margin-bottom: 0 !important;
 }
+.mb-05 {
+	@media (min-width: 1024px){
+		margin-bottom: .6em;
+	}
+}
 .mb-1 {
 	margin-bottom: 1em;
 }
