@@ -80,5 +80,14 @@
 <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M18.748 3.252c0.781 0.781 0.781 2.047 0 2.828s-2.047 0.781-2.828 0-0.781-2.047 0-2.828c0.781-0.781 2.047-0.781 2.828 0z"></path>
 <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M7.5 29.333h-2.333c-0.644 0-1.167-0.523-1.167-1.167v-7c0-0.644 0.523-1.167 1.167-1.167h2.333c0.644 0 1.167 0.523 1.167 1.167v7c0 0.644-0.523 1.167-1.167 1.167z"></path>
 </symbol>
+<symbol id="i-hours" viewBox="0 0 32 32">
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M26.347 17.341l1.661 1.661 1.661-1.661"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M5.652 14.659l-1.661-1.661-1.661 1.661"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2207" d="M10.116 14.306c0-1.081 0.877-1.959 1.959-1.959s1.959 0.877 1.959 1.959c0 2.448-3.916 2.448-3.916 5.347h3.916"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2207" d="M21.192 16.040l-3.349-0.036c-0.189-0.003-0.343-0.156-0.343-0.347v-3.309"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2207" d="M21.186 12.427v7.227"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M25.364 23.504c-2.201 2.739-5.573 4.496-9.361 4.496h-0.005c-6.632 0-12.007-5.373-12.007-12.003 0-0.925 0.115-1.823 0.313-2.688"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M6.641 8.496c2.2-2.739 5.573-4.496 9.361-4.496 6.632 0 12.007 5.373 12.007 12.003 0 0.925-0.115 1.823-0.313 2.688"></path>
+</symbol>
 </defs>
 </svg>
