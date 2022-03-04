@@ -219,7 +219,7 @@
 		max-width: 840px;
 	}
 	&--md {
-		max-width: 690px;
+		max-width: 650px;
 	}
 	&--xl {
 		max-width: 1040px;
@@ -278,8 +278,9 @@
 		}
 	}
 	&--ob {
-		&:before {
-			@media (min-width: 1200px){
+		@media (min-width: 1200px){
+			padding-right: 5em;
+			&:before {
 				top: 36%;
 				right: 3%;
 			}
@@ -471,6 +472,9 @@
 		&--lg {
 			@media (max-width: 1200px){
 				display: block;
+				.secon__text,.secon__title {
+					max-width: 100%;
+				}
 			}
 		}
 	}

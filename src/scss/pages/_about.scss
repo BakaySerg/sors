@@ -55,6 +55,23 @@
 		background-size: 180px auto;
 	}
 }
+.s-dark-decor-4 {
+	@media (min-width: 360px){
+		background-image: url(../img/frontline/saas/bg.svg);
+		background-repeat: no-repeat;
+		background-position:  86% 5%;
+	}
+	@media (max-width: 1100px){
+		background-size: 100px auto;
+		background-position:  102% 5%;
+	}
+	@media (max-width: 991px){
+		background-size: 80px auto;
+	}
+	@media (max-width: 600px){
+		background-position:  98% 35%;
+	}
+}
 .dark {
 	&__slider {
 		overflow: hidden;
