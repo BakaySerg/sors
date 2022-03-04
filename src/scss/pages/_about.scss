@@ -41,6 +41,20 @@
 		background-size: 130px auto;
 	}
 }
+.s-dark-decor-3 {
+	@media (min-width: 360px){
+		background-image: url(../img/frontline/dedicated/bg.svg);
+		background-repeat: no-repeat;
+		background-position:  84% bottom;
+	}
+	@media (max-width: 1366px){
+		background-size: 220px auto;
+		background-position:  92% bottom;
+	}
+	@media (max-width: 991px){
+		background-size: 180px auto;
+	}
+}
 .dark {
 	&__slider {
 		overflow: hidden;

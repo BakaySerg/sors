@@ -224,13 +224,11 @@
 		}
 	}
 	&__text {
-		@media (min-width: 992px){
+		@media (min-width: 1100px){
+			max-width: 722px;
 			.columns-list {
 				width: 106%;
 			}
-		}
-		@media (min-width: 1100px){
-			max-width: 722px;
 			&--lg {
 				flex-grow: 0.5;
 				flex-shrink: 0;
