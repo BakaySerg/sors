@@ -289,6 +289,12 @@
 			grid-template-columns: repeat(3,1fr);
 			gap: 1.2em;
 		}
+		&--double {
+			@media (min-width: 1024px){
+				grid-template-columns: repeat(2,1fr);
+				gap: 1.8em 3.4em;
+			}
+		}
 	}
 	&__item {
 		@media (min-width: 720px) and (max-width: 1023px){
