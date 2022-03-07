@@ -1,0 +1,46 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="i-call" viewBox="0 4 32 32">
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M9.32 10.653l-2.747-2.747"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M16 7.893v-3.893"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M22.68 10.653l2.747-2.747"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M24.579 26.667h2.088c1.473 0 2.667-1.193 2.667-2.667v-1.352c0-1.372-0.704-2.648-1.869-3.444-2.876-1.961-6.929-3.204-11.464-3.204s-8.588 1.243-11.464 3.205c-1.165 0.796-1.869 2.072-1.869 3.443v1.352c0 1.473 1.193 2.667 2.667 2.667h2.088c1.104 0 2-0.896 2-2v-1.817c0-0.409 0.241-0.788 0.623-0.936 1.768-0.685 3.795-1.080 5.956-1.080s4.188 0.395 5.956 1.080c0.381 0.148 0.623 0.527 0.623 0.936v1.817c0 1.104 0.896 2 2 2v0z"></path>
+</symbol>
+<symbol id="i-chart" viewBox="0 0 32 32">
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M22.329 8.249c3.888 3.888 3.888 10.192 0 14.080s-10.192 3.888-14.080 0c-3.888-3.888-3.888-10.192 0-14.080s10.192-3.888 14.080 0z"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M10.573 17.186v-1.333"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M15 17.185v-2.667"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M19.427 17.186v-4"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M26.667 26.666l-4.333-4.333"></path>
+</symbol>
+<symbol id="i-file" viewBox="0 0 32 32">
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M25.333 14.667v-4.229c0-0.707-0.281-1.385-0.781-1.885l-3.771-3.771c-0.5-0.5-1.179-0.781-1.885-0.781h-9.563c-1.473 0-2.667 1.193-2.667 2.667v18.667c0 1.473 1.193 2.667 2.667 2.667h6.667"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M25.333 10.667h-5.333c-0.736 0-1.333-0.597-1.333-1.333v-5.333"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M22 20v8"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M26 20v8"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M20 26h8"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M20 22h8"></path>
+</symbol>
+<symbol id="i-magnet" viewBox="0 0 32 32">
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M12 27.999v-2.667"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M6 26l2-2"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M14 14l-4-4"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M18 18l4 4"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M4 20h2.667"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M7.791 14.095l2.114 2.114c0.25 0.25 0.589 0.391 0.943 0.391s0.693-0.14 0.943-0.391l5.724-5.724c0.263-0.263 0.574-0.471 0.918-0.613s0.711-0.215 1.082-0.215c0.371 0 0.739 0.073 1.082 0.215s0.655 0.35 0.918 0.613v0c0.263 0.263 0.471 0.574 0.613 0.918s0.215 0.711 0.215 1.082-0.073 0.739-0.215 1.082c-0.142 0.343-0.351 0.655-0.613 0.918l-5.724 5.724c-0.25 0.25-0.39 0.589-0.39 0.943s0.14 0.693 0.39 0.943l2.114 2.114c0.25 0.25 0.589 0.391 0.943 0.391s0.693-0.14 0.943-0.391l5.724-5.724c1.591-1.591 2.485-3.75 2.485-6s-0.894-4.409-2.485-6v0c-1.591-1.591-3.75-2.485-6-2.485s-4.409 0.894-6 2.485l-5.724 5.724c-0.25 0.25-0.39 0.589-0.39 0.943s0.141 0.693 0.391 0.943z"></path>
+</symbol>
+<symbol id="i-mic" viewBox="0 0 32 32">
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M24 28h-16c-2.209 0-4-1.791-4-4v-16c0-2.209 1.791-4 4-4h16c2.209 0 4 1.791 4 4v16c0 2.209-1.791 4-4 4z"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M21.667 15.995c0 3.129-2.537 5.667-5.667 5.667s-5.667-2.537-5.667-5.667"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M14 16.046c0 1.104 0.896 2 2 2s2-0.896 2-2v-5.377c0-1.104-0.896-2-2-2s-2 0.896-2 2v5.377z"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M16 21.667v1.907"></path>
+</symbol>
+<symbol id="i-support" viewBox="0 0 32 32">
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M25.333 22.666h-1.333c-0.736 0-1.333-0.597-1.333-1.333v-6.667c0-0.736 0.597-1.333 1.333-1.333h1.333c1.473 0 2.667 1.193 2.667 2.667v4c0 1.473-1.193 2.667-2.667 2.667z"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M8 22.666h-1.333c-1.473 0-2.667-1.193-2.667-2.667v-4c0-1.473 1.193-2.667 2.667-2.667h1.333c0.736 0 1.333 0.597 1.333 1.333v6.667c0 0.736-0.597 1.333-1.333 1.333z"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M24.667 13.333v-0.667c0-4.787-3.88-8.667-8.667-8.667s-8.667 3.88-8.667 8.667v0.667"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M16.833 28.333h-1.667c-0.92 0-1.667-0.747-1.667-1.667s0.747-1.667 1.667-1.667h1.667c0.92 0 1.667 0.747 1.667 1.667s-0.747 1.667-1.667 1.667z"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M18.5 26.667h2.833c1.473 0 2.667-1.193 2.667-2.667v-1.333"></path>
+</symbol>
+</defs>
+</svg>
