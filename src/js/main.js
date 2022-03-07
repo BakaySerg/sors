@@ -8,7 +8,7 @@
 		else {
 			current = current.split('-')[0];
 		}
-		console.log(current);
+		// console.log(current);
 		let menuItems = document.querySelectorAll('.menu__link');
 		for (let i = 0, len = menuItems.length; i < len; i++) {
 			if (menuItems[i].getAttribute("href").split('-')[0].indexOf(current) !== -1 && current.length > 3) {

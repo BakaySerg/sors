@@ -279,6 +279,9 @@
 	font-weight: bold;
 	font-size: 10px;
 	color: $accent;
+	@media (max-width: 600px){
+		margin-bottom: .7em;
+	}
 }
 .news {
 	&__row {
@@ -297,9 +300,11 @@
 		}
 	}
 	&__item {
-		@media (min-width: 720px) and (max-width: 1023px){
-			display: flex;
-			gap: 1.5em;
+		&:not(.news__row--double>.news__item) {
+			@media (min-width: 720px) and (max-width: 1023px){
+				display: flex;
+				gap: 1.5em;
+			}
 		}
 		@media (max-width: 1023px){
 			padding-bottom: 2.4em;
@@ -309,6 +314,9 @@
 		padding-bottom: 2.2em;
 		@media (min-width: 720px) and (max-width: 1023px){
 			flex-shrink: .2;
+		}
+		@media (max-width: 600px){
+			padding-bottom: 1.2em;
 		}
 	}
 }
