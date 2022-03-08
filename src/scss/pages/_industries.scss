@@ -99,6 +99,7 @@
 		flex-shrink: .5;
 		@media (max-width: 991px){
 			width: fit-content;
+			max-width: 440px;
 			margin-left: auto;
 			margin-right: auto;
 			padding-top: 1em;

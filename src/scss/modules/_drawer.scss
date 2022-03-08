@@ -27,7 +27,7 @@
    z-index: 99;
    opacity: 0;
    transition: opacity .3s;
-   background-color: rgba($text,.3);
+   background-color: rgba($text,.5);
    user-select: none;
 }
 .drawer__wrapper {
@@ -213,12 +213,6 @@
       }
    }
 }
-// .drawer--add .drawer__header {
-//    padding: 20px 0 1.8em;
-//    @media (max-width: 700px) {
-//       padding: 2px 0 1.2em;
-//    }
-// }
 .drawer--lg {
    .drawer__header{
       border-bottom: none;

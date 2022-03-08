@@ -25,6 +25,19 @@
 		background-size: 130px auto, 60px auto;
 	}
 }
+.s-dark-half {
+	@media (min-width: 992px){
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 50%;
+			width: 100%;
+			background-color: rgba(255,255,255,.05);
+		}
+	}
+}
 .s-dark-decor-2 {
 	@media (min-width: 768px){
 		background-image: url(../img/about/decor-1.svg);
@@ -94,7 +107,7 @@
 			.dark__slide {
 				opacity: 0.9;
 				&:before {
-					max-width: 206px;
+					max-width: 190px;
 				}
 			}
 		}
@@ -102,6 +115,10 @@
 			padding-top: 1.4em;
 			padding-bottom: 1em;
 			grid-template-columns: repeat(4,1fr);
+			&--5 {
+				grid-template-columns: repeat(5,1fr);
+				gap: 1em;
+			}
 		}
 	}
 }
