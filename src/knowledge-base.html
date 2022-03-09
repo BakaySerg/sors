@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sors | Knowledge Base</title>
+	@@include('./include/head.html')
+</head>
+<body>
+	<div class="wrapper">
+		@@include('./include/icon-sprite.html')
+		<div class="intro intro--sm intro--green">
+			@@include('./include/header.html')
+			<!-- s-intro -->
+			<section class="s-intro">
+				<div class="container intro__row">
+					<div class="intro__text intro__text--lg decor-blur decor-blur--green">
+						<em class="subtitle subtitle--muted">Back Office Support /</em>
+						<h1 class="h1">Knowledge Base</h1>
+						<p class="overtitle">Knowledge base support is one of the main focus areas of our company.</p>
+					</div>
+					<figure class="intro__pict intro__pict--abs">
+						<img loading="lazy"  src="img/back-office/knowledge-base/figure.svg" alt="abstract" width="307" height="307">
+					</figure>
+				</div>
+			</section>
+		</div>
+
+		<!--  -->
+		<section class="s--simply">
+			<div class="container">
+				<div class="secon__row">
+					<div class="secon__title decor decor--o decor--oc decor--md">
+						<h2 class="h2">Knowledge base support is one of the main focus areas of our <span class="text-bg">company</span></h2>
+					</div>
+					<div class="secon__text">
+						<p class="enlarged">We help our customers to find the most suitable approach to operating and building a knowledge base for their particular service, solving administrative tasks, and allowing them to get rid of any unforeseen errors and situations.</p>
+						<p class="enlarged">You and your employees must be too busy to sit around and work on the knowledge base regularly. Most often, solutions are found on the fly and customers’ questions are lost forever after being answered by a support team. Our knowledge base service can construct your base to free you from facing the challenges and issues coming your way.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- s-mini -->
+		<section class="s--mini s--blue">
+			<div class="container">
+				<h3 class="h2_5 v-center mb-05">
+					<svg class="icon icon--xs icon--turn-90" viewBox="0 0 32 32"><use xlink:href="#i-arrow-right"/></svg>
+					Benefits of creating a knowledge base:
+				</h3>
+				<ol class="order-list columns-list">
+					<li>Creating a knowledge base for your department</li>
+					<li>Providing you with custom and individual knowledge base solutions, examining their effectiveness, and making amendments if needed</li>
+					<li>Implementing the work-flow process within the tool</li>
+					<li>Issue tracking</li>
+					<li>Reports on knowledge base usage and more</li>
+				</ol>
+			</div>
+		</section>
+
+
+		<div class="banner banner--blue">
+			<div class="container banner__row">
+				<div class="banner__text">
+					<blockquote class="quote quote--dark">Contact us to supercharge your IT support services and help desk management.</blockquote>
+					<div class="banner__cta">
+						<a href="contacts.html" class="btn btn--lg btn--icon btn--light" data-drawer-trigger aria-controls="form-modal" aria-expanded="false" aria-label="Open modal">
+							Contact us
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+						</a>
+						<span class="banner__decor">
+							<i class="dot"></i>
+							<i class="dot"></i>
+							<i class="dot"></i>
+						</span>
+					</div>
+				</div>
+				<div class="banner__pict">
+					<img loading="lazy" srcset="img/pricing/banner.png, img/pricing/banner-2x.png 2x" src="img/pricing/banner.png" alt="banner" width="472" height="384">
+				</div>
+			</div>
+		</div>
+
+
+	</div><!-- /wrapper -->
+	@@include('./include/footer.html')
+	<!-- popup (feedback)-->
+	<div class="drawer drawer--add" id="form-modal" data-drawer-target>
+		<div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+		<div class="drawer__add">
+			<div class="drawer__fieldset">
+				@@include('./include/popups/modal-form.html')
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+	<script defer src="js/drawer.js"></script>
+</body>
+</html>
