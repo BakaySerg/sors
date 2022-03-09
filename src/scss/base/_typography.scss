@@ -108,6 +108,7 @@ p {
 	gap: 1.5em;
 	p {padding-bottom: 0;}
 	a {
+		display: inline-block;
 		color: $bg-dark-blue;
 		padding: 0.1em;
 		font-size: 1.08em;

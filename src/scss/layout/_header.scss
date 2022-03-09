@@ -158,6 +158,9 @@
 				pointer-events: auto;
 				z-index: 99;
 				box-shadow: 0 8px 6px rgba(3,3,3,.04);
+				@media (max-width: 767px){
+					min-height: 86vh;
+				}
 			}
 			ul {
 				flex-wrap: wrap;
