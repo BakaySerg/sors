@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sors | Content Moderation</title>
+	@@include('./include/head.html')
+</head>
+<body>
+	<div class="wrapper">
+		@@include('./include/icon-sprite.html')
+		<div class="intro intro--sm intro--blue">
+			@@include('./include/header.html')
+			<!-- s-intro -->
+			<section class="s-intro">
+				<div class="container intro__row">
+					<div class="intro__text intro__text--lg decor-blur decor-blur--blue">
+						<em class="subtitle subtitle--muted">Back Office Support /</em>
+						<h1 class="h1">Content Moderation</h1>
+						<p class="overtitle">Paired with customer support, content moderation offers an omnichannel approach that helps meet customers where they are.</p>
+					</div>
+					<figure class="intro__pict intro__pict--abs">
+						<img loading="lazy"  src="img/back-office/content-moderation/figure.svg" alt="abstract" width="307" height="307">
+					</figure>
+				</div>
+			</section>
+		</div>
+
+		<!--  -->
+		<section class="s--simply s--divided">
+			<div class="container">
+				<div class="secon__row secon__row--lg">
+					<div class="secon__title decor decor--o decor--oc decor--md">
+						<h2 class="h2">Building a robust online community starts with setting a standard for community <span class="text-bg">management</span></h2>
+					</div>
+					<div class="secon__text">
+						<p class="enlarged">Your SORS team is specially trained to understand and moderate content based on your unique community standards. They support a safe and open platform, so your customers stay confident in your brand. Paired with customer support, content moderation offers an omnichannel approach that helps meet customers where they are.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--  -->
+		<section class="s--simply">
+			<div class="container">
+				<div class="argum__row argum__row--double pt-2">
+					<div class="argum__item">
+						<div class="argum__title">
+							<i class="icon-decor">
+								<svg class="icon icon--accent" viewBox="0 0 32 32"><use xlink:href="img/back-office/sprite.svg#i-suitcase"/></svg>
+							</i>
+							<h3 class="h3">Community Management</h3>
+						</div>
+						<ol class="order-list pb-05">
+							<li>Maintain standards for blogs, forums, apps, and other social platforms</li>
+							<li>Vet content according to community guidelines and compliance</li>
+							<li>Quickly reply to public comments and reviews</li>
+						</ol>
+					</div>
+					<div class="argum__item">
+						<div class="argum__title">
+							<i class="icon-decor">
+								<svg class="icon icon--accent" viewBox="0 0 32 32"><use xlink:href="img/back-office/sprite.svg#i-shield"/></svg>
+							</i>
+							<h3 class="h3">Fraud Prevention</h3>
+						</div>
+						<ol class="order-list pb-05">
+							<li>Monitor user activity for abnormalities</li>
+							<li>Identify suspicious accounts and monitor for bots</li>
+							<li>Review online transactions</li>
+						</ol>
+					</div>
+					<div class="argum__item">
+						<div class="argum__title">
+							<i class="icon-decor">
+								<svg class="icon icon--accent" viewBox="0 0 32 32"><use xlink:href="img/back-office/sprite.svg#i-mess"/></svg>
+							</i>
+							<h3 class="h3">Social Media Moderation</h3>
+						</div>
+						<ol class="order-list pb-05">
+							<li>Tailor communication based on the needs of your audience</li>
+							<li>Review comments and connect with your user base</li>
+							<li>Improve brand loyalty with regular conversations and messages</li>
+						</ol>
+					</div>
+					<div class="argum__item">
+						<div class="argum__title">
+							<i class="icon-decor">
+								<svg class="icon icon--accent" viewBox="0 0 32 32"><use xlink:href="img/back-office/sprite.svg#i-magnet"/></svg>
+							</i>
+							<h3 class="h3">Social Media Lead Generation</h3>
+						</div>
+						<ol class="order-list pb-05">
+							<li>Identify relevant conversations</li>
+							<li>Convert conversations into leads and nurture them</li>
+							<li>Close sales on behalf of your organization</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="banner banner--green">
+			<div class="container banner__row">
+				<div class="banner__text">
+					<blockquote class="quote">Contact us to supercharge your IT support services and help desk management.</blockquote>
+					<div class="banner__cta">
+						<a href="#" class="btn btn--lg btn--icon" data-drawer-trigger aria-controls="form-modal" aria-expanded="false" aria-label="Open modal">
+							Contact us
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+						</a>
+						<span class="banner__decor">
+							<i class="dot"></i>
+							<i class="dot"></i>
+							<i class="dot"></i>
+						</span>
+					</div>
+				</div>
+				<div class="banner__pict">
+					<img loading="lazy" srcset="img/industries/banner.png, img/industries/banner-2x.png 2x" src="img/industries/banner.png" alt="banner" width="488" height="384">
+				</div>
+			</div>
+		</div>
+
+
+	</div><!-- /wrapper -->
+	@@include('./include/footer.html')
+	<!-- popup (feedback)-->
+	<div class="drawer drawer--add" id="form-modal" data-drawer-target>
+		<div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+		<div class="drawer__add">
+			<div class="drawer__fieldset">
+				@@include('./include/popups/modal-form.html')
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+	<script defer src="js/drawer.js"></script>
+</body>
+</html>
