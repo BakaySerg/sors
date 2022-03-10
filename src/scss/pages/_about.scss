@@ -85,6 +85,22 @@
 		background-position:  98% 35%;
 	}
 }
+.s-dark-decor-5 {
+	@media (min-width: 768px){
+		background-image: url(../img/back-office/bg.svg);
+		background-repeat: no-repeat;
+		background-position:  66% 1px;
+	}
+	@media (max-width: 1366px){
+		background-size: 250px auto;
+	}
+	@media (max-width: 1200px){
+		background-position:  74% 0;
+	}
+	@media (max-width: 991px){
+		background-size: 180px auto;
+	}
+}
 .dark {
 	&__slider {
 		overflow: hidden;

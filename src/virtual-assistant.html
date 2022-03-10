@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sors | Virtual Assistant</title>
+	@@include('./include/head.html')
+</head>
+<body>
+	<div class="wrapper">
+		@@include('./include/icon-sprite.html')
+		<div class="intro intro--sm intro--blue">
+			@@include('./include/header.html')
+			<!-- s-intro -->
+			<section class="s-intro">
+				<div class="container intro__row">
+					<div class="intro__text intro__text--lg decor-blur decor-blur--blue">
+						<em class="subtitle subtitle--muted">Back Office Support /</em>
+						<h1 class="h1">Virtual Assistant</h1>
+						<p class="overtitle">Live Virtual Assistant Services to provide a professional phone experience for your callers.</p>
+					</div>
+					<figure class="intro__pict intro__pict--abs">
+						<img loading="lazy"  src="img/back-office/virtual-assistant/figure.svg" alt="abstract" width="307" height="307">
+					</figure>
+				</div>
+			</section>
+		</div>
+
+		<!--  -->
+		<section class="s--simply">
+			<div class="container article__row article__row--alined">
+				<figure class="article__pict">
+					<img loading="lazy" srcset="img/back-office/virtual-assistant/article-1.jpg, img/back-office/virtual-assistant/article-1-2x.jpg 2x" src="img/back-office/virtual-assistant/article-1.jpg" alt="people" width="411" height="578">
+				</figure>
+				<div class="article__text">
+					<h2 class="h3 pb-05">Live Virtual Assistant Services to provide a professional phone experience for your callers.</h2>
+					<p class="text-lg">Bright, friendly, and helpful, our live virtual assistants are available whenever you require our services. Your callers prefer to converse with a real person who provides a personal touch that is unique to your business. We answer every call quickly 24/7/365 to ensure your caller customer experience is always dialed in. SORS Ltd has a wide variety of customizable plans so you can pick the best virtual assistant service that is perfect for you.</p>
+				</div>
+			</div>
+			<div class="container article__row article__row--turned article__row--alined">
+				<figure class="article__pict">
+					<img loading="lazy" srcset="img/back-office/virtual-assistant/article-2.jpg, img/back-office/virtual-assistant/article-2-2x.jpg 2x" src="img/back-office/virtual-assistant/article-2.jpg" alt="people" width="411" height="578">
+				</figure>
+				<div class="article__text">
+					<p class="text-lg">With competition on the rise in industries like yours, it's paramount to keep your customers happy and capitalize on any new business leads all while portraying a professional image.</p>
+					<p class="text-lg">This is where our team of SORS lives virtual phone assistants come in to make your life easier and your organization more successful. We strive to improve your customer service offering, professionally brand your company’s phone experience, and even increase your sales leads. And we offer the best virtual assistant services at an affordable, scalable rate that good business sense demands you consider. Our outsourced receptionist and remote secretarial services are sure to help take your business to the next level!</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!--  -->
+		<section class="s--simply s--dark s-dark-decor-5 s-dark-half">
+			<div class="container">
+				<h3 class="h2_5 v-center mb-1">
+					<svg class="icon icon--xs icon--turn-90" viewBox="0 0 32 32"><use xlink:href="#i-arrow-right"/></svg>
+					Why Choose SORS?
+				</h3>
+				<ol class="order-list columns-list columns-list--three">
+					<li>Fastest pick-up times in the industry</li>
+					<li>Professional and courteous virtual assistants</li>
+					<li>Specialized call screening</li>
+					<li>Emergency response specialists</li>
+					<li>Your own nationwide 800 number</li>
+					<li>Voicemail and IVR services</li>
+					<li>In-house IT Dept</li>
+					<li>Custom account and software design</li>
+					<li>Dynamic online account access</li>
+					<li>Interface with your company website</li>
+					<li>Advanced on-call roster services</li>
+					<li>Online account analytics</li>
+				</ol>
+			</div>
+		</section>
+
+
+		<div class="banner banner--green">
+			<div class="container banner__row">
+				<div class="banner__text">
+					<blockquote class="quote">Contact us to supercharge your IT support services and help desk management.</blockquote>
+					<div class="banner__cta">
+						<a href="#" class="btn btn--lg btn--icon" data-drawer-trigger aria-controls="form-modal" aria-expanded="false" aria-label="Open modal">
+							Contact us
+							<svg class="icon" viewBox="0 0 32 32"><use xlink:href="#i-arrow-skew"/></svg>
+						</a>
+						<span class="banner__decor">
+							<i class="dot"></i>
+							<i class="dot"></i>
+							<i class="dot"></i>
+						</span>
+					</div>
+				</div>
+				<div class="banner__pict">
+					<img loading="lazy" srcset="img/industries/banner.png, img/industries/banner-2x.png 2x" src="img/industries/banner.png" alt="banner" width="488" height="384">
+				</div>
+			</div>
+		</div>
+
+
+	</div><!-- /wrapper -->
+	@@include('./include/footer.html')
+	<!-- popup (feedback)-->
+	<div class="drawer drawer--add" id="form-modal" data-drawer-target>
+		<div class="drawer__overlay" data-drawer-close tabindex="-1"></div>
+		<div class="drawer__add">
+			<div class="drawer__fieldset">
+				@@include('./include/popups/modal-form.html')
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+	<script defer src="js/drawer.js"></script>
+</body>
+</html>

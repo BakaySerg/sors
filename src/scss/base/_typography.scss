@@ -104,8 +104,10 @@ p {
 	font-size: em(21);
 	font-weight: bold;
 	display: flex;
-	align-items: center;
 	gap: 1.5em;
+	@media (min-width: 992px){
+		align-items: center;
+	}
 	p {padding-bottom: 0;}
 	a {
 		display: inline-block;
