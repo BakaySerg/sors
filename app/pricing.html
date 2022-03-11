@@ -272,19 +272,19 @@
 					</div>
 					<div class="calc__choice">
 						<label class="calc__switcher">
-							<input type="radio" name="r3" value="Phone">
+							<input type="checkbox" name="c-3-1" value="Phone">
 							<div class="calc__inner">Phone</div>
 						</label>
 						<label class="calc__switcher">
-							<input type="radio" name="r3" value="Email">
+							<input type="checkbox" name="c-3-2" value="Email">
 							<div class="calc__inner">Email</div>
 						</label>
 						<label class="calc__switcher">
-							<input type="radio" name="r3" value="Chat">
+							<input type="checkbox" name="c-3-3" value="Chat">
 							<div class="calc__inner">Chat</div>
 						</label>
 						<label class="calc__switcher">
-							<input type="radio" name="r3" value="Social Media">
+							<input type="checkbox" name="c-3-4" value="Social Media">
 							<div class="calc__inner">Social Media</div>
 						</label>
 					</div>
@@ -306,15 +306,15 @@
 					</div>
 					<div class="calc__choice">
 						<label class="calc__switcher">
-							<input type="radio" name="r4" value="English">
+							<input type="checkbox" name="c-4-1" value="English">
 							<div class="calc__inner">English</div>
 						</label>
 						<label class="calc__switcher">
-							<input type="radio" name="r4" value="German">
+							<input type="checkbox" name="c-4-2" value="German">
 							<div class="calc__inner">German</div>
 						</label>
 						<label class="calc__switcher">
-							<input type="radio" name="r4" value="Other">
+							<input type="checkbox" name="c-4-3" value="Other">
 							<div class="calc__inner">Other</div>
 						</label>
 					</div>
@@ -701,7 +701,7 @@
 
 		if (form) {
 			let textes = [];
-			let checkboxes = form.querySelectorAll("input[type=radio]");
+			let checkboxes = form.querySelectorAll("input[type]");
 			form.addEventListener('change', function (e) {
 				textes.length = 0;
 				let checkboxesSelected = [...checkboxes].filter(elem => elem.checked);
