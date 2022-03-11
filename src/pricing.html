@@ -214,7 +214,7 @@
 						</div>
 						<h2 class="h2">Almost <span class="text-bg">Done</span></h2>
 						<p class="text-lg mb-1">Leave your contacts to get a dedicated offer</p>
-						<button type="button" class="btn btn--md btn--md-hov" aria-label="switch tab" data-trigger-tab="t-1">back to choice</button>
+						<button type="button" class="btn btn--md btn--md-hov" aria-label="switch tab" data-trigger-tab="t-1" data-reset>back to choice</button>
 					</div>
 					<div class="form">
 						<div class="form__dual">
@@ -468,11 +468,16 @@
 	<script>
 		const form = document.getElementById("choice-form");
 		const resultField = document.getElementById("choice-result");
-		const resultTrigger = document.querySelector("[data-trigger-result]")
+		const defaulText = resultField.innerText;
+		const resultTrigger = document.querySelector("[data-trigger-result]");
+		const btnReset = document.querySelector("[data-reset]");
 
 		if (form) {
 			let textes = [];
 			let checkboxes = form.querySelectorAll("input[type]");
+			btnReset.addEventListener('click', function (e) {
+				resultField.innerText = defaulText;
+			});
 			form.addEventListener('change', function (e) {
 				textes.length = 0;
 				let checkboxesSelected = [...checkboxes].filter(elem => elem.checked);
