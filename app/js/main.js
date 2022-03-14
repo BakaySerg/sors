@@ -105,20 +105,20 @@
 			});
 		};
 
-		const introSlider = document.querySelector(".intro__slider");
-		if (introSlider) {
-			new Swiper(introSlider, {
-				draggable:true,
-				grabCursor: true,
-				centeredSlides: true,
-				spaceBetween: 30,
-				autoHeight: true,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				}
-			});
-		};
+		// const introSlider = document.querySelector(".intro__slider");
+		// if (introSlider) {
+		// 	new Swiper(introSlider, {
+		// 		draggable:true,
+		// 		grabCursor: true,
+		// 		centeredSlides: true,
+		// 		spaceBetween: 30,
+		// 		autoHeight: true,
+		// 		pagination: {
+		// 			el: ".swiper-pagination",
+		// 			clickable: true,
+		// 		}
+		// 	});
+		// };
 
 		const darkSlider = document.querySelector(".dark__slider");
 		if (darkSlider) {
